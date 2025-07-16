@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}Sofia Tribe | Upcoming Events{% endblock %}
+
+{% block content %}
+
+<section class="full-hero position-relative text-center text-white d-flex align-items-center justify-content-center" 
+         style="background: url('{% static 'images/upcomingfirst.jpeg' %}') center/cover no-repeat;">
+  
+  <!-- Karanlık overlay -->
+  <div class="full-hero-overlay position-absolute w-100 h-100"></div>
+
+  <!-- İçerik -->
+  <div class="full-hero-content position-relative z-2" data-aos="fade-up">
+    <h1 class="fw-bold mb-3 display-4">Upcoming Events</h1>
+    <p class="lead mb-4" style="max-width: 650px; margin: 0 auto;">
+      Don’t miss what’s coming next! Explore our exciting upcoming events and be part of the Sofia Tribe experience.
+    </p>
+    
+    <!-- Buton -->
+    <a href="#upcoming-events-list" class="btn btn-light btn-lg">
+      <i class="fa-solid fa-arrow-down me-2"></i> See More
+    </a>
+  </div>
+
+  <!-- Kaydır ikon (opsiyonel) -->
+  <a href="#upcoming-events-list" class="scroll-down-indicator position-absolute bottom-3 start-50 translate-middle-x text-white">
+    <i class="fa-solid fa-chevron-down fa-2x"></i>
+  </a>
+</section>
+
+<section id="upcoming-events-list" class="py-5">
+  <div class="container">
+    <h2 class="mb-4 text-center">What’s Next?</h2>
+    <p class="text-muted text-center mb-5" style="max-width: 700px; margin: 0 auto;">
+      Stay tuned for our upcoming activities, workshops, and gatherings. We can’t wait to share what’s on the horizon!
+    </p>
+
+    <div class="row align-items-center g-4" data-aos="fade-up">
+      
+      <!-- Left: Image -->
+      <div class="col-md-6 text-center">
+        <img src="{% static 'images/brain.png' %}" alt="No Upcoming Events" 
+             class="img-fluid rounded-3 shadow-sm" style="max-height: 320px; object-fit: cover;">
+      </div>
+      
+      <!-- Right: Text -->
+      <div class="col-md-6">
+        <h3 class="fw-bold mb-3">✨ No Upcoming Events… For Now! ✨</h3>
+        <p class="text-muted mb-3" style="font-size: 1.05rem;">
+          At the moment, there are no scheduled events.  
+          But guess what? We’re already dreaming, planning, and working hard to bring you  
+          <strong>even more colorful, energetic, and unforgettable experiences!</strong> 🌟  
+        </p>
+        <p class="text-muted mb-4" style="font-size: 1.05rem;">
+          While we prepare the next surprise, make sure to stay connected with us –  
+          because something exciting is just around the corner! 💫
+        </p>
+      </div>
+    </div>
+
+    <!-- Social media icons -->
+    <div class="social-follow-section" data-aos="fade-in">
+      <p>👉 Follow us on social media and never miss the next big event!</p>
+      
+      <a href="https://www.instagram.com/sofiatribe.bg/" target="_blank" class="social-icon ig">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      
+      <a href="https://www.facebook.com/profile.php?id=61569166691667" target="_blank" class="social-icon fb">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+{% endblock content %}

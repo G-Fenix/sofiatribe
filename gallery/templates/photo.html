@@ -1,0 +1,584 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}Sofia Tribe | Photo{% endblock %}
+
+{% block content %}
+
+<section class="page-hero position-relative text-center text-white d-flex align-items-center justify-content-center" 
+         style="height: 60vh; background: url('{% static 'images/snow.jpeg' %}') center/cover no-repeat;">
+  
+  <!-- Karanlık overlay -->
+  <div class="page-hero-overlay position-absolute w-100 h-100" style="background: rgba(0,0,0,0.55);"></div>
+
+  <!-- İçerik -->
+  <div class="page-hero-content position-relative z-2" data-aos="fade-up">
+    <h1 class="fw-bold mb-3" style="font-size: 3rem;">Photo Gallery</h1>
+    <p class="lead mb-4" style="max-width: 600px; margin: 0 auto;">
+      Relive the beautiful moments captured during our events and gatherings.
+    </p>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4">
+      
+      <!-- FOTO 1 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/104.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Sofia Meetup - March 2025">
+            <img src="{% static 'images/104.jpeg' %}" alt="Sofia Meetup" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Sofia Meetup</h6>
+            <p class="small text-muted">Sofia • March 2025</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/105.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Sofia Meetup - March 2025">
+            <img src="{% static 'images/105.jpeg' %}" alt="Sofia Meetup" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Sofia Meetup</h6>
+            <p class="small text-muted">Sofia • March 2025</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/106.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Sofia Meetup - March 2025">
+            <img src="{% static 'images/106.jpeg' %}" alt="Sofia Meetup" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Sofia Meetup</h6>
+            <p class="small text-muted">Sofia • March 2025</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/107.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Sofia Meetup - March 2025">
+            <img src="{% static 'images/107.jpeg' %}" alt="Sofia Meetup" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Sofia Meetup</h6>
+            <p class="small text-muted">Sofia • March 2025</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/108.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Sofia Meetup - March 2025">
+            <img src="{% static 'images/108.jpeg' %}" alt="Sofia Meetup" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Sofia Meetup</h6>
+            <p class="small text-muted">Sofia • March 2025</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/109.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Sofia Meetup - March 2025">
+            <img src="{% static 'images/109.jpeg' %}" alt="Sofia Meetup" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Sofia Meetup</h6>
+            <p class="small text-muted">Sofia • March 2025</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOTO 2 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/110.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Winter Gathering - January 2025">
+            <img src="{% static 'images/110.jpeg' %}" alt="Winter Gathering" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Winter Gathering</h6>
+            <p class="small text-muted">Vitosha • January 2025</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOTO 3 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/111.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Cultural Walk - December 2024">
+            <img src="{% static 'images/111.jpeg' %}" alt="Cultural Walk" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Cultural Walk</h6>
+            <p class="small text-muted">City Center • Dec 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOTO 4 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/113.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Mountain Trip - Summer 2024">
+            <img src="{% static 'images/113.jpeg' %}" alt="Mountain Trip" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/121.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Mountain Trip - Summer 2024">
+            <img src="{% static 'images/121.jpeg' %}" alt="Mountain Trip" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/122.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Mountain Trip - Summer 2024">
+            <img src="{% static 'images/122.jpeg' %}" alt="Mountain Trip" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/123.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Mountain Trip - Summer 2024">
+            <img src="{% static 'images/123.jpeg' %}" alt="Mountain Trip" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/20.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Mountain Trip - Summer 2024">
+            <img src="{% static 'images/20.jpeg' %}" alt="Mountain Trip" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/21.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Mountain Trip - Summer 2024">
+            <img src="{% static 'images/21.jpeg' %}" alt="Mountain Trip" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/2.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Mountain Trip - Summer 2024">
+            <img src="{% static 'images/2.jpeg' %}" alt="Mountain Trip" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/129.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Mountain Trip - Summer 2024">
+            <img src="{% static 'images/129.jpeg' %}" alt="Mountain Trip" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/snow.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Mountain Trip - Summer 2024">
+            <img src="{% static 'images/snow.jpeg' %}" alt="Mountain Trip" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/3.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Mountain Trip - Summer 2024">
+            <img src="{% static 'images/3.jpeg' %}" alt="Mountain Trip" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/photohead.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Mountain Trip - Summer 2024">
+            <img src="{% static 'images/photohead.jpeg' %}" alt="Mountain Trip" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/22.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Mountain Trip - Summer 2024">
+            <img src="{% static 'images/22.jpeg' %}" alt="Mountain Trip" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/23.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Mountain Trip - Summer 2024">
+            <img src="{% static 'images/23.jpeg' %}" alt="Mountain Trip" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/125.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Mountain Trip - Summer 2024">
+            <img src="{% static 'images/125.jpeg' %}" alt="Mountain Trip" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/126.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Mountain Trip - Summer 2024">
+            <img src="{% static 'images/126.jpeg' %}" alt="Mountain Trip" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/127.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Mountain Trip - Summer 2024">
+            <img src="{% static 'images/127.jpeg' %}" alt="Mountain Trip" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/comcom.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Mountain Trip - Summer 2024">
+            <img src="{% static 'images/comcom.jpeg' %}" alt="Mountain Trip" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/114.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Mountain Trip - Summer 2024">
+            <img src="{% static 'images/114.jpeg' %}" alt="Mountain Trip" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/115.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Mountain Trip - Summer 2024">
+            <img src="{% static 'images/115.jpeg' %}" alt="Mountain Trip" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/119.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Mountain Trip - Summer 2024">
+            <img src="{% static 'images/119.jpeg' %}" alt="Mountain Trip" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/120.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Mountain Trip - Summer 2024">
+            <img src="{% static 'images/120.jpeg' %}" alt="Mountain Trip" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/124.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Mountain Trip - Summer 2024">
+            <img src="{% static 'images/124.jpeg' %}" alt="Mountain Trip" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/142.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Mountain Trip - Summer 2024">
+            <img src="{% static 'images/142.jpeg' %}" alt="Mountain Trip" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/131.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Mountain Trip - Summer 2024">
+            <img src="{% static 'images/131.jpeg' %}" alt="Mountain Trip" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/132.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Mountain Trip - Summer 2024">
+            <img src="{% static 'images/132.jpeg' %}" alt="Mountain Trip" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/136.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Mountain Trip - Summer 2024">
+            <img src="{% static 'images/136.jpeg' %}" alt="Mountain Trip" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/137.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Mountain Trip - Summer 2024">
+            <img src="{% static 'images/137.jpeg' %}" alt="Mountain Trip" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/139.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Mountain Trip - Summer 2024">
+            <img src="{% static 'images/139.jpeg' %}" alt="Mountain Trip" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/134.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Mountain Trip - Summer 2024">
+            <img src="{% static 'images/134.jpeg' %}" alt="Mountain Trip" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/135.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Mountain Trip - Summer 2024">
+            <img src="{% static 'images/135.jpeg' %}" alt="Mountain Trip" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/17.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Mountain Trip - Summer 2024">
+            <img src="{% static 'images/17.jpeg' %}" alt="Mountain Trip" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/whatwedofirst.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Mountain Trip - Summer 2024">
+            <img src="{% static 'images/whatwedofirst.jpeg' %}" alt="Mountain Trip" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/12.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Mountain Trip - Summer 2024">
+            <img src="{% static 'images/12.jpeg' %}" alt="Mountain Trip" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/16.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Mountain Trip - Summer 2024">
+            <img src="{% static 'images/16.jpeg' %}" alt="Mountain Trip" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/video.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Mountain Trip - Summer 2024">
+            <img src="{% static 'images/video.jpeg' %}" alt="Mountain Trip" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/117.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Mountain Trip - Summer 2024">
+            <img src="{% static 'images/117.jpeg' %}" alt="Mountain Trip" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'images/118.jpeg' %}" class="glightbox" data-gallery="sofia-gallery" data-title="Mountain Trip - Summer 2024">
+            <img src="{% static 'images/118.jpeg' %}" alt="Mountain Trip" class="gallery-img">
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+  const lightbox = GLightbox({
+    selector: '.glightbox'
+  });
+</script>
+
+{% endblock content %}

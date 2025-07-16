@@ -1,0 +1,124 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}Sofia Tribe | Contact Us{% endblock %}
+
+{% block content %}
+
+{% if messages %}
+  <div id="contact-popup">
+    {% for message in messages %}
+      <div class="popup-message">
+        <i class="fa-solid fa-circle-check"></i> {{ message }}
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}
+
+<section class="page-hero position-relative text-center text-white d-flex align-items-center justify-content-center" style="height: 60vh; background: url('{% static 'images/contact.jpeg' %}') center/cover no-repeat;">
+  <div class="page-hero-overlay position-absolute w-100 h-100" style="background: rgba(0,0,0,0.55);"></div>
+
+  <div class="page-hero-content position-relative z-2" data-aos="fade-up">
+    <h1 class="fw-bold mb-3" style="font-size: 3rem;">Contact Us!</h1>
+    <p class="lead mb-4" style="max-width: 600px; margin: 0 auto;">
+      Discover the story behind Sofia Tribe and the amazing people shaping our community.
+    </p>
+  </div>
+</section>
+
+<section class="contact-section py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+
+      <!-- Contact Form -->
+      <div class="col-lg-7 mb-4" data-aos="fade-right">
+        <h2 class="fw-bold mb-4 text-center">Get in Touch</h2>
+        
+        <form method="post" action="" class="shadow-sm p-4 rounded bg-white">
+          {% csrf_token %}
+          
+          {{ form.non_field_errors }}
+
+          <div class="mb-3">
+            {{ form.full_name.label_tag }}
+            {{ form.full_name }}
+            {{ form.full_name.errors }}
+          </div>
+
+          <div class="mb-3">
+            {{ form.email.label_tag }}
+            {{ form.email }}
+            {{ form.email.errors }}
+          </div>
+
+          <div class="mb-3">
+            {{ form.message.label_tag }}
+            {{ form.message }}
+            {{ form.message.errors }}
+          </div>
+
+          <!-- ✅ Zorunlu Onay Kutusu (Link Yok) -->
+          <div class="form-check mb-3 text-start">
+            <input class="form-check-input" type="checkbox" id="privacyConsent" required>
+            <label class="form-check-label small" for="privacyConsent">
+              By submitting this form, you confirm that the information you provided is correct and 
+              you consent to Sofia Tribe contacting you regarding your inquiry. 
+              Your personal data will be handled responsibly and used only for the stated purpose.
+            </label>
+          </div>
+
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary px-4 py-2">
+              <i class="fa-solid fa-paper-plane me-2"></i>Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Contact Info Card -->
+      <div class="col-lg-5 mb-4 d-flex justify-content-center" data-aos="fade-left">
+        <div class="card shadow-sm border-0 p-4 text-center contact-card">
+          <h4 class="fw-bold mb-3">Contact Information</h4>
+
+          <p class="mb-2">
+            <i class="fa-solid fa-location-dot text-primary me-2"></i> Sofia, Bulgaria
+          </p>
+
+          <p class="mb-3">
+            <i class="fa-solid fa-envelope text-primary me-2"></i>
+            <a href="mailto:hello@sofiatribe.com" class="text-decoration-none">hello@sofiatribe.com</a>
+          </p>
+
+          <hr class="my-3">
+
+          <h5 class="fw-semibold mb-3">Follow Us</h5>
+          <div class="d-flex justify-content-center gap-3">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/profile.php?id=61569166691667" class="contact-social-icon facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/sofiatribe.bg/" class="contact-social-icon instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  // 3 saniye sonra popup kaybolsun
+  setTimeout(() => {
+    const popup = document.getElementById('contact-popup');
+    if (popup) {
+      popup.style.transition = 'opacity 0.5s ease';
+      popup.style.opacity = '0';
+      setTimeout(() => popup.remove(), 500); // tamamen kaldır
+    }
+  }, 3000);
+</script>
+
+{% endblock content %}

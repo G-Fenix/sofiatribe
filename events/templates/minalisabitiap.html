@@ -1,0 +1,174 @@
+{% extends "razpolojeniel.html" %}
+{% load static %}
+
+{% block title %}Sofia Tribe | Минали събития{% endblock %}
+
+{% block icerik %}
+
+<section class="full-hero position-relative text-center text-white d-flex align-items-center justify-content-center" 
+         style="background: url('{% static 'images/ppppaaast.jpeg' %}') center/cover no-repeat;">
+  
+  <!-- Тъмен overlay -->
+  <div class="full-hero-overlay position-absolute w-100 h-100"></div>
+
+  <!-- Съдържание -->
+  <div class="full-hero-content position-relative z-2" data-aos="fade-up">
+    <h1 class="fw-bold mb-3 display-4">Минали събития</h1>
+    <p class="lead mb-4" style="max-width: 650px; margin: 0 auto;">
+      Разгледайте незабравимите моменти, които споделихме с нашата общност.
+    </p>
+    
+    <!-- Бутон -->
+    <a href="#past-events-list" class="btn btn-light btn-lg">
+      <i class="fa-solid fa-arrow-down me-2"></i> Вижте още
+    </a>
+  </div>
+
+  <!-- Индикатор за скрол -->
+  <a href="#past-events-list" class="scroll-down-indicator position-absolute bottom-3 start-50 translate-middle-x text-white">
+    <i class="fa-solid fa-chevron-down fa-2x"></i>
+  </a>
+</section>
+
+<section id="past-events-list" class="py-5">
+  <div class="container">
+    <h2 class="mb-4 text-center" data-aos="fade-left">Нашите предишни акценти</h2>
+    <p class="text-muted text-center mb-5" style="max-width: 700px; margin: 0 auto;" data-aos="fade-left">
+      Ето някои от страхотните събития, които организирахме в миналото. Преживейте отново спомените и вижте какво прави Sofia Tribe специална.
+    </p>
+
+    <div class="row g-4">
+
+      <!-- Event 1 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <div class="card event-card h-100">
+          <img src="{% static 'images/107.jpeg' %}" class="event-card-img" alt="Йога в Борисова градина">
+          <div class="card-body">
+            <h5 class="card-title">Йога в Борисова градина</h5>
+            <p class="card-text">
+              Събрахме се в красивата Борисова градина за йога сесия сред природата и положителна енергия.
+            </p>
+          </div>
+          <div class="card-footer text-muted">
+            <i class="fa-solid fa-calendar-days me-1"></i> Юни 2024 | Борисова градина, София
+          </div>
+        </div>
+      </div>
+
+      <!-- Event 2 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card event-card h-100">
+          <img src="{% static 'images/video.jpeg' %}" class="event-card-img" alt="Поход на Витоша">
+          <div class="card-body">
+            <h5 class="card-title">Поход на Витоша</h5>
+            <p class="card-text">
+              Освежаващ преход, за да открием невероятни гледки, да се свържем с природата и да споделим приключението с приятели.
+            </p>
+          </div>
+          <div class="card-footer text-muted">
+            <i class="fa-solid fa-calendar-days me-1"></i> Юли 2024 | Витоша, София
+          </div>
+        </div>
+      </div>
+
+      <!-- Event 3 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card event-card h-100">
+          <img src="{% static 'images/snow.jpeg' %}" class="event-card-img" alt="Ски уикенд в Банско">
+          <div class="card-body">
+            <h5 class="card-title">Ски уикенд в Банско</h5>
+            <p class="card-text">
+              Незабравим уикенд със ски и сноуборд по заснежените писти на Банско, изпълнен със смях и забавления!
+            </p>
+          </div>
+          <div class="card-footer text-muted">
+            <i class="fa-solid fa-calendar-days me-1"></i> Януари 2025 | Банско
+          </div>
+        </div>
+      </div>
+
+      <!-- Event 4 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <div class="card event-card h-100">
+          <img src="{% static 'images/118.jpeg' %}" class="event-card-img" alt="Бързи срещи в Macondo Bar">
+          <div class="card-body">
+            <h5 class="card-title">Бързи срещи в Macondo Bar</h5>
+            <p class="card-text">
+              Неформална вечер за запознанства, където нови лица срещнаха стари приятели и споделиха истории с коктейли в уютна атмосфера.
+            </p>
+          </div>
+          <div class="card-footer text-muted">
+            <i class="fa-solid fa-calendar-days me-1"></i> Март 2025 | Macondo Bar, София
+          </div>
+        </div>
+      </div>
+
+      <!-- Event 5 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card event-card h-100">
+          <img src="{% static 'images/photohead.jpeg' %}" class="event-card-img" alt="Културна разходка в София">
+          <div class="card-body">
+            <h5 class="card-title">Културна разходка в София</h5>
+            <p class="card-text">
+              Водена разходка из историческите забележителности на София, за да научим повече за богатото ѝ наследство и скритите ѝ кътчета.
+            </p>
+          </div>
+          <div class="card-footer text-muted">
+            <i class="fa-solid fa-calendar-days me-1"></i> Април 2025 | Център на София
+          </div>
+        </div>
+      </div>
+
+      <!-- Event 6 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card event-card h-100">
+          <img src="{% static 'images/131.jpeg' %}" class="event-card-img" alt="Пикник край езерото">
+          <div class="card-body">
+            <h5 class="card-title">Пикник край езерото</h5>
+            <p class="card-text">
+              Отпускащ следобед с музика, вкусна храна и още по-добра компания край езерото Панчарево.
+            </p>
+          </div>
+          <div class="card-footer text-muted">
+            <i class="fa-solid fa-calendar-days me-1"></i> Май 2025 | Езеро Панчарево
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="py-5 text-center bg-light">
+  <div class="container" data-aos="fade-up">
+
+    <!-- Заглавие -->
+    <h2 class="fw-bold mb-3">📸 Преживейте отново най-добрите моменти!</h2>
+
+    <!-- Описание -->
+    <p class="text-muted mb-4" style="max-width: 700px; margin: 0 auto;">
+      Искате да видите още от нашите незабравими приключения?<br>
+      Разгледайте нашата <strong>Фотогалерия</strong>, за да си припомните акцентите, или посетете <strong>Видеогалерията</strong>, за да усетите енергията на миналите събития!
+    </p>
+
+    <!-- Бутоните -->
+    <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
+
+      <!-- Photo Gallery Button -->
+      <a href="/bg/galeria/foto" class="btn btn-outline-primary btn-lg gallery-btn d-flex align-items-center gap-2">
+        <i class="fa-solid fa-images"></i> 
+        <span> Фотогалерия</span>
+      </a>
+
+      <!-- Video Gallery Button -->
+      <a href="/bg/galeria/galeria" class="btn btn-primary btn-lg gallery-btn d-flex align-items-center gap-2">
+        <i class="fa-solid fa-film"></i> 
+        <span> Видеогалерия</span>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+{% endblock icerik %}

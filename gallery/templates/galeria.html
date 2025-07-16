@@ -1,0 +1,119 @@
+{% extends "razpolojeniel.html" %}
+{% load static %}
+
+{% block title %}Sofia Tribe | Видео галерия{% endblock %}
+
+{% block icerik %}
+
+<section class="page-hero position-relative text-center text-white d-flex align-items-center justify-content-center" 
+         style="height: 60vh; background: url('{% static 'images/video.jpeg' %}') center/cover no-repeat;">
+  
+  <!-- Тъмен overlay -->
+  <div class="page-hero-overlay position-absolute w-100 h-100" style="background: rgba(0,0,0,0.55);"></div>
+
+  <!-- Съдържание -->
+  <div class="page-hero-content position-relative z-2" data-aos="fade-up">
+    <h1 class="fw-bold mb-3" style="font-size: 3rem;">Видео галерия</h1>
+    <p class="lead mb-4" style="max-width: 600px; margin: 0 auto;">
+      Гледайте най-добрите моменти от нашите събития и усетете атмосферата на Sofia Tribe.
+    </p>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Видео 1 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'videos/303.mp4' %}" class="glightbox-video" data-gallery="video-gallery" data-title="Софийска среща – Март 2025" data-type="video">
+            
+            <video class="gallery-video" muted preload="metadata">
+              <source src="{% static 'videos/303.mp4' %}" type="video/mp4">
+            </video>
+            
+            <div class="video-overlay">
+              <i class="fas fa-play-circle"></i>
+            </div>
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Софийска среща</h6>
+            <p class="small text-muted">София • Март 2025</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Видео 2 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'videos/303.mp4' %}" class="glightbox-video" data-gallery="video-gallery" data-title="Зимно събиране – Януари 2025" data-type="video">
+            
+            <video class="gallery-video" muted preload="metadata">
+              <source src="{% static 'videos/303.mp4' %}" type="video/mp4">
+            </video>
+
+            <div class="video-overlay">
+              <i class="fas fa-play-circle"></i>
+            </div>
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Зимно събиране</h6>
+            <p class="small text-muted">Витоша • Януари 2025</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Видео 3 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'videos/sofiacatedral.mp4' %}" class="glightbox-video" data-gallery="video-gallery" data-title="Културна разходка – Декември 2024" data-type="video">
+            
+            <video class="gallery-video" muted preload="metadata">
+              <source src="{% static 'videos/sofiacatedral.mp4' %}" type="video/mp4">
+            </video>
+
+            <div class="video-overlay">
+              <i class="fas fa-play-circle"></i>
+            </div>
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Културна разходка</h6>
+            <p class="small text-muted">Център на София • Декември 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Видео 4 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'videos/303.mp4' %}" class="glightbox-video" data-gallery="video-gallery" data-title="Планинско пътуване – Лято 2024" data-type="video">
+            
+            <video class="gallery-video" muted preload="metadata">
+              <source src="{% static 'videos/303.mp4' %}" type="video/mp4">
+            </video>
+
+            <div class="video-overlay">
+              <i class="fas fa-play-circle"></i>
+            </div>
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Планинско пътуване</h6>
+            <p class="small text-muted">Рила • Лято 2024</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+  const lightboxVideo = GLightbox({
+    selector: '.glightbox-video'
+  });
+</script>
+
+{% endblock icerik %}

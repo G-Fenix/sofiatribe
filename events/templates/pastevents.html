@@ -1,0 +1,174 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}Sofia Tribe | Past Events{% endblock %}
+
+{% block content %}
+
+<section class="full-hero position-relative text-center text-white d-flex align-items-center justify-content-center" 
+         style="background: url('{% static 'images/ppppaaast.jpeg' %}') center/cover no-repeat;">
+  
+  <!-- Karanlık overlay -->
+  <div class="full-hero-overlay position-absolute w-100 h-100"></div>
+
+  <!-- İçerik -->
+  <div class="full-hero-content position-relative z-2" data-aos="fade-up">
+    <h1 class="fw-bold mb-3 display-4">Past Events</h1>
+    <p class="lead mb-4" style="max-width: 650px; margin: 0 auto;">
+      Take a look back at the unforgettable moments we’ve shared with our community.
+    </p>
+    
+    <!-- Buton -->
+    <a href="#past-events-list" class="btn btn-light btn-lg">
+      <i class="fa-solid fa-arrow-down me-2"></i> See More
+    </a>
+  </div>
+
+  <!-- Kaydır ikon (opsiyonel) -->
+  <a href="#past-events-list" class="scroll-down-indicator position-absolute bottom-3 start-50 translate-middle-x text-white">
+    <i class="fa-solid fa-chevron-down fa-2x"></i>
+  </a>
+</section>
+
+<section id="past-events-list" class="py-5">
+  <div class="container">
+    <h2 class="mb-4 text-center" data-aos="fade-left">Our Previous Highlights</h2>
+    <p class="text-muted text-center mb-5" style="max-width: 700px; margin: 0 auto;" data-aos="fade-left">
+      Here are some of the amazing events we’ve organized in the past. Relive the memories and see what makes Sofia Tribe special.
+    </p>
+
+    <div class="row g-4">
+
+      <!-- Event 1 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <div class="card event-card h-100">
+          <img src="{% static 'images/107.jpeg' %}" class="event-card-img" alt="Yoga in Borisova Garden">
+          <div class="card-body">
+            <h5 class="card-title">Yoga in Borisova Gradina</h5>
+            <p class="card-text">
+              We gathered in the beautiful Borisova Garden for a mindful yoga session surrounded by nature and positive vibes.
+            </p>
+          </div>
+          <div class="card-footer text-muted">
+            <i class="fa-solid fa-calendar-days me-1"></i> June 2024 | Borisova Garden Park, Sofia
+          </div>
+        </div>
+      </div>
+
+      <!-- Event 2 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card event-card h-100">
+          <img src="{% static 'images/video.jpeg' %}" class="event-card-img" alt="Hiking on Vitosha Mountain">
+          <div class="card-body">
+            <h5 class="card-title">Hiking on Vitosha Mountain</h5>
+            <p class="card-text">
+              A refreshing hike to explore breathtaking views, connect with nature, and share the adventure with fellow tribe members.
+            </p>
+          </div>
+          <div class="card-footer text-muted">
+            <i class="fa-solid fa-calendar-days me-1"></i> July 2024 | Vitosha Mountain, Sofia
+          </div>
+        </div>
+      </div>
+
+      <!-- Event 3 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card event-card h-100">
+          <img src="{% static 'images/snow.jpeg' %}" class="event-card-img" alt="Ski Trip to Bansko">
+          <div class="card-body">
+            <h5 class="card-title">Ski Trip to Bansko</h5>
+            <p class="card-text">
+              An unforgettable weekend skiing and snowboarding in the snowy slopes of Bansko, filled with laughter and fun!
+            </p>
+          </div>
+          <div class="card-footer text-muted">
+            <i class="fa-solid fa-calendar-days me-1"></i> January 2025 | Bansko Ski Resort
+          </div>
+        </div>
+      </div>
+
+      <!-- Event 4 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <div class="card event-card h-100">
+          <img src="{% static 'images/118.jpeg' %}" class="event-card-img" alt="Fast Meet at Macondo Bar">
+          <div class="card-body">
+            <h5 class="card-title">Fast Meet at Macondo Bar</h5>
+            <p class="card-text">
+              A casual networking night where new faces met familiar ones, sharing stories over cocktails in a cozy atmosphere.
+            </p>
+          </div>
+          <div class="card-footer text-muted">
+            <i class="fa-solid fa-calendar-days me-1"></i> March 2025 | Macondo Bar, Sofia
+          </div>
+        </div>
+      </div>
+
+      <!-- Event 5 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card event-card h-100">
+          <img src="{% static 'images/photohead.jpeg' %}" class="event-card-img" alt="Cultural Walk in Sofia">
+          <div class="card-body">
+            <h5 class="card-title">Cultural Walk in Sofia</h5>
+            <p class="card-text">
+              A guided walk through Sofia’s historical landmarks, learning about the city’s rich heritage and hidden gems.
+            </p>
+          </div>
+          <div class="card-footer text-muted">
+            <i class="fa-solid fa-calendar-days me-1"></i> April 2025 | Downtown Sofia
+          </div>
+        </div>
+      </div>
+
+      <!-- Event 6 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card event-card h-100">
+          <img src="{% static 'images/131.jpeg' %}" class="event-card-img" alt="Picnic by the Lake">
+          <div class="card-body">
+            <h5 class="card-title">Picnic by the Lake</h5>
+            <p class="card-text">
+              A relaxing picnic afternoon with music, good food, and even better company by Pancharevo Lake.
+            </p>
+          </div>
+          <div class="card-footer text-muted">
+            <i class="fa-solid fa-calendar-days me-1"></i> May 2025 | Pancharevo Lake
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="py-5 text-center bg-light">
+  <div class="container" data-aos="fade-up">
+
+    <!-- Başlık -->
+    <h2 class="fw-bold mb-3">📸 Relive the Best Moments!</h2>
+
+    <!-- Açıklama -->
+    <p class="text-muted mb-4" style="max-width: 700px; margin: 0 auto;">
+      Want to see more from our unforgettable adventures?<br>
+      Dive into our <strong>Photo Gallery</strong> to relive the highlights or explore the <strong>Video Gallery</strong> to feel the energy of our past events!
+    </p>
+
+    <!-- Butonlar -->
+    <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
+
+      <!-- Photo Gallery Button -->
+      <a href="/gallery/photo" class="btn btn-outline-primary btn-lg gallery-btn d-flex align-items-center gap-2">
+        <i class="fa-solid fa-images"></i> 
+        <span> Photo Gallery</span>
+      </a>
+
+      <!-- Video Gallery Button -->
+      <a href="/gallery/video" class="btn btn-primary btn-lg gallery-btn d-flex align-items-center gap-2">
+        <i class="fa-solid fa-film"></i> 
+        <span> Video Gallery</span>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+{% endblock content %}

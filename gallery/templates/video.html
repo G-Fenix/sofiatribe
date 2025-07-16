@@ -1,0 +1,121 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}Sofia Tribe | Video{% endblock %}
+
+{% block content %}
+
+<section class="page-hero position-relative text-center text-white d-flex align-items-center justify-content-center" 
+         style="height: 60vh; background: url('{% static 'images/video.jpeg' %}') center/cover no-repeat;">
+  
+  <!-- Karanlık overlay -->
+  <div class="page-hero-overlay position-absolute w-100 h-100" style="background: rgba(0,0,0,0.55);"></div>
+
+  <!-- İçerik -->
+  <div class="page-hero-content position-relative z-2" data-aos="fade-up">
+    <h1 class="fw-bold mb-3" style="font-size: 3rem;">Video Gallery</h1>
+    <p class="lead mb-4" style="max-width: 600px; margin: 0 auto;">
+      Watch the highlights of our past events and experience the vibe of Sofia Tribe.
+    </p>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Video 1 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <!-- Lightbox ile açılacak -->
+          <a href="{% static 'videos/303.mp4' %}" class="glightbox-video" data-gallery="video-gallery" data-title="Sofia Meetup - March 2025" data-type="video">
+            
+            <!-- Küçük önizleme -->
+            <video class="gallery-video" muted preload="metadata">
+              <source src="{% static 'videos/303.mp4' %}" type="video/mp4">
+            </video>
+            
+            <div class="video-overlay">
+              <i class="fas fa-play-circle"></i>
+            </div>
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Sofia Meetup</h6>
+            <p class="small text-muted">Sofia • March 2025</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 2 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'videos/303.mp4' %}" class="glightbox-video" data-gallery="video-gallery" data-title="Winter Gathering - January 2025" data-type="video">
+            
+            <video class="gallery-video" muted preload="metadata">
+              <source src="{% static 'videos/303.mp4' %}" type="video/mp4">
+            </video>
+
+            <div class="video-overlay">
+              <i class="fas fa-play-circle"></i>
+            </div>
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Winter Gathering</h6>
+            <p class="small text-muted">Vitosha • Jan 2025</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 3 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'videos/sofiacatedral.mp4' %}" class="glightbox-video" data-gallery="video-gallery" data-title="Cultural Walk - Dec 2024" data-type="video">
+            
+            <video class="gallery-video" muted preload="metadata">
+              <source src="{% static 'videos/sofiacatedral.mp4' %}" type="video/mp4">
+            </video>
+
+            <div class="video-overlay">
+              <i class="fas fa-play-circle"></i>
+            </div>
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Cultural Walk</h6>
+            <p class="small text-muted">City Center • Dec 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 4 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="gallery-card">
+          <a href="{% static 'videos/303.mp4' %}" class="glightbox-video" data-gallery="video-gallery" data-title="Mountain Trip - Summer 2024" data-type="video">
+            
+            <video class="gallery-video" muted preload="metadata">
+              <source src="{% static 'videos/303.mp4' %}" type="video/mp4">
+            </video>
+
+            <div class="video-overlay">
+              <i class="fas fa-play-circle"></i>
+            </div>
+          </a>
+          <div class="gallery-caption">
+            <h6 class="mb-1">Mountain Trip</h6>
+            <p class="small text-muted">Rila • Summer 2024</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+  const lightboxVideo = GLightbox({
+    selector: '.glightbox-video'
+  });
+</script>
+
+{% endblock content %}

@@ -1,0 +1,206 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}Sofia Tribe | Who We Are{% endblock %}
+
+{% block content %}
+
+<!-- HERO SECTION -->
+<section class="full-hero position-relative text-center text-white d-flex align-items-center justify-content-center" 
+         style="background: url('{% static 'images/whatwedofirst.jpeg' %}') center/cover no-repeat;">
+  
+  <div class="full-hero-overlay position-absolute w-100 h-100" style="background: rgba(0,0,0,0.55);"></div>
+
+  <div class="full-hero-content position-relative z-2" data-aos="fade-up">
+    <h1 class="fw-bold mb-3 display-4">Who We Are?</h1>
+    <p class="lead mb-4" style="max-width: 650px; margin: 0 auto;">
+      We are a vibrant community in Sofia where people come together to share meaningful experiences, create connections, and build lasting friendships.
+    </p>
+    <a href="#about" class="btn btn-light btn-lg">
+      <i class="fa-solid fa-arrow-down me-2"></i> Discover More
+    </a>
+  </div>
+
+  <a href="#about" class="scroll-down-indicator position-absolute bottom-3 start-50 translate-middle-x text-white">
+    <i class="fa-solid fa-chevron-down fa-2x"></i>
+  </a>
+</section>
+
+<!-- 1. ABOUT SECTION -->
+<section id="about" class="py-5">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      
+      <!-- TEXT AREA -->
+      <div class="col-lg-6">
+        <h6 class="text-primary fw-bold" data-aos="fade-right">ABOUT US</h6>
+        <h2 class="fw-bold mb-4" data-aos="fade-left">A Community That Feels Like Home</h2>
+        
+        <!-- 1. Paragraf (normal hizalı) -->
+        <p class="text-muted" data-aos="fade-right">
+          Sofia Tribe is more than just a group of people – it’s a family. 
+          We are a vibrant and welcoming community that brings together locals, expats, and travelers who want to truly experience Sofia in a meaningful way. 
+          Whether you’ve just arrived in the city or have been living here for years, you’ll always find a warm atmosphere where everyone is valued and included.
+        </p>
+
+        <!-- 2. Paragraf (biraz içeride) -->
+        <p class="text-muted ms-4" data-aos="fade-left">
+          Through our events, cultural activities, and social gatherings, we connect people from all walks of life. 
+          From cozy coffee meetups and city tours to exciting nights out and weekend adventures in nature, we create opportunities for genuine friendships and unforgettable memories. 
+          It’s about more than just attending events – it’s about feeling part of something special.
+        </p>
+
+        <!-- 3. Paragraf (daha da içeride) -->
+        <p class="text-muted ms-5" data-aos="fade-right">
+          Sofia Tribe is where authentic connections happen. 
+          We believe that life is better when shared with others, and we’re here to help you discover the best of Sofia while building meaningful relationships that last a lifetime.
+        </p>
+      </div>
+
+      <!-- IMAGE -->
+      <div class="col-lg-6 text-center" data-aos="fade-left">
+        <img src="{% static 'images/23.jpeg' %}" alt="Community" class="img-fluid rounded shadow">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 2. CORE VALUES -->
+<section class="py-5 bg-light">
+  <div class="container text-center">
+    <h6 class="text-primary fw-bold" data-aos="fade-right">OUR VALUES</h6>
+    <h2 class="fw-bold mb-5" data-aos="fade-right">What Makes Sofia Tribe Special?</h2>
+    <div class="row g-4">
+      <!-- Value 1 -->
+      <div class="col-md-4" data-aos="fade-up">
+        <div class="card h-100 shadow-sm p-4">
+          <div class="icon mb-3 text-primary"><i class="fas fa-users fa-2x"></i></div>
+          <h4>Community</h4>
+          <p class="text-muted">A welcoming space for everyone, no matter where you come from.</p>
+        </div>
+      </div>
+      <!-- Value 2 -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+        <div class="card h-100 shadow-sm p-4">
+          <div class="icon mb-3 text-success"><i class="fas fa-handshake fa-2x"></i></div>
+          <h4>Connection</h4>
+          <p class="text-muted">We create genuine friendships that go beyond events.</p>
+        </div>
+      </div>
+      <!-- Value 3 -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card h-100 shadow-sm p-4">
+          <div class="icon mb-3 text-warning"><i class="fas fa-smile-beam fa-2x"></i></div>
+          <h4>Fun</h4>
+          <p class="text-muted">Life is better with laughter, joy, and unforgettable moments.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRANSITION SECTION WITH BLURRED BG -->
+<section class="py-5 position-relative text-center text-dark">
+
+  <!-- Background image with blur -->
+  <div class="blurred-bg position-absolute w-100 h-100" 
+       style="background: url('{% static "images/video.jpeg" %}') center/cover no-repeat; filter: blur(6px);">
+  </div>
+
+  <!-- Light overlay for readability -->
+  <div class="overlay position-absolute w-100 h-100" 
+       style="background: rgba(255,255,255,0.6); top:0; left:0;"></div>
+
+  <!-- Content -->
+  <div class="container position-relative" style="z-index: 2;">
+    <h6 class="text-primary fw-bold" data-aos="fade-up">WHY WE EXIST</h6>
+    <h2 class="fw-bold mb-4" data-aos="fade-up" data-aos-delay="100">More Than Just Events</h2>
+    <p class="text-muted mb-5" style="max-width: 700px; margin: 0 auto;" data-aos="fade-up" data-aos-delay="200">
+      Sofia Tribe isn’t just about attending meetups – it’s about creating a space where people can connect, grow, and feel at home in a new city. 
+      We focus on building genuine relationships, sharing culture, and making every moment memorable.
+    </p>
+
+    <div class="row g-4 mt-4">
+      <!-- Feature 1 -->
+      <div class="col-md-4" data-aos="fade-up">
+        <div class="p-4">
+          <div class="icon mb-3 text-success"><i class="fas fa-heart fa-2x"></i></div>
+          <h5 class="fw-bold">Inclusive</h5>
+          <p class="text-muted">We welcome everyone – locals, expats, travelers – with open arms.</p>
+        </div>
+      </div>
+      <!-- Feature 2 -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+        <div class="p-4">
+          <div class="icon mb-3 text-info"><i class="fas fa-globe-europe fa-2x"></i></div>
+          <h5 class="fw-bold">Cultural Exchange</h5>
+          <p class="text-muted">A place to share stories, languages, and diverse perspectives.</p>
+        </div>
+      </div>
+      <!-- Feature 3 -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="p-4">
+          <div class="icon mb-3 text-warning"><i class="fas fa-seedling fa-2x"></i></div>
+          <h5 class="fw-bold">Personal Growth</h5>
+          <p class="text-muted">Meet new people, learn new things, and grow together as a community.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- 3. WHAT WE DO -->
+<section class="py-5">
+  <div class="container">
+    <h6 class="text-primary fw-bold text-center" data-aos="fade-right">WHAT WE DO</h6>
+    <h2 class="fw-bold text-center mb-5" data-aos="fade-right">Bringing People Together</h2>
+    <div class="row g-4">
+      <!-- Event Type -->
+      <div class="col-md-4" data-aos="fade-up">
+        <div class="card shadow-sm h-100">
+          <img src="{% static 'images/ppppaaast.jpeg' %}" class="card-img-top" alt="Events">
+          <div class="card-body">
+            <h5 class="card-title">Social Events</h5>
+            <p class="card-text text-muted">From cozy coffee meetups to exciting night outs, we make socializing easy.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Tours -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+        <div class="card shadow-sm h-100">
+          <img src="{% static 'images/snow.jpeg' %}" class="card-img-top" alt="Tours">
+          <div class="card-body">
+            <h5 class="card-title">City Discoveries</h5>
+            <p class="card-text text-muted">Explore Sofia’s hidden gems, history, and vibrant culture with new friends.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Adventures -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card shadow-sm h-100">
+          <img src="{% static 'images/upcomingfirst.jpeg' %}" class="card-img-top" alt="Adventures">
+          <div class="card-body">
+            <h5 class="card-title">Outdoor Adventures</h5>
+            <p class="card-text text-muted">Weekend hikes, nature escapes, and fun trips beyond the city.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. WHY JOIN US -->
+<section class="py-5 text-white position-relative" style="background: url('{% static 'images/contact.jpeg' %}') center/cover no-repeat;">
+  <div class="overlay position-absolute w-100 h-100" style="background: rgba(0,0,0,0.65); top:0; left:0;"></div>
+  <div class="container position-relative z-2 text-center" data-aos="fade-in">
+    <h2 class="fw-bold mb-4">Want to connect with us?</h2>
+    <p class="lead mb-4" style="max-width: 700px; margin: 0 auto;">
+      Meet amazing people, create unforgettable memories, and truly feel at home in Sofia. We’d love to meet you!
+    </p>
+    <a href="/contact-us/" class="btn btn-primary btn-lg">
+      <i class="fa-solid fa-heart me-2"></i>  Just drop us a message 
+    </a>
+  </div>
+</section>
+
+{% endblock content %}

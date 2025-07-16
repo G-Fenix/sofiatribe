@@ -1,0 +1,187 @@
+{% extends "razpolojeniel.html" %}
+{% load static %}
+
+{% block title %}Sofia Tribe | Кои сме ние{% endblock %}
+
+{% block icerik %}
+
+<!-- HERO SECTION -->
+<section class="full-hero position-relative text-center text-white d-flex align-items-center justify-content-center" 
+         style="background: url('{% static 'images/whatwedofirst.jpeg' %}') center/cover no-repeat;">
+  
+  <div class="full-hero-overlay position-absolute w-100 h-100" style="background: rgba(0,0,0,0.55);"></div>
+
+  <div class="full-hero-content position-relative z-2" data-aos="fade-up">
+    <h1 class="fw-bold mb-3 display-4">Кои сме ние?</h1>
+    <p class="lead mb-4" style="max-width: 650px; margin: 0 auto;">
+      Ние сме динамична общност в София, където хората се събират, за да споделят смислени преживявания, да създават връзки и трайни приятелства.
+    </p>
+    <a href="#about" class="btn btn-light btn-lg">
+      <i class="fa-solid fa-arrow-down me-2"></i> Научи повече
+    </a>
+  </div>
+
+  <a href="#about" class="scroll-down-indicator position-absolute bottom-3 start-50 translate-middle-x text-white">
+    <i class="fa-solid fa-chevron-down fa-2x"></i>
+  </a>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="py-5">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      
+      <!-- TEXT AREA -->
+      <div class="col-lg-6">
+        <h6 class="text-primary fw-bold" data-aos="fade-right">ЗА НАС</h6>
+        <h2 class="fw-bold mb-4" data-aos="fade-left">Общност, която се чувства като дом</h2>
+        
+        <p class="text-muted" data-aos="fade-right">
+          Sofia Tribe е повече от група хора – това е семейство. 
+          Ние сме гостоприемна и живa общност, която събира местни жители, чужденци и пътешественици, които искат да изживеят София по смислен начин.
+          Независимо дали току-що сте пристигнали или живеете тук от години, винаги ще намерите топла атмосфера, където всеки е ценен.
+        </p>
+
+        <p class="text-muted ms-4" data-aos="fade-left">
+          Чрез нашите събития, културни активности и социални срещи свързваме хора от всички среди.
+          От уютни кафе срещи и градски турове до вълнуващи вечери навън и уикенд приключения сред природата – ние създаваме възможности за истински приятелства и незабравими спомени.
+        </p>
+
+        <p class="text-muted ms-5" data-aos="fade-right">
+          Sofia Tribe е мястото, където се раждат истински връзки.
+          Вярваме, че животът е по-хубав, когато се споделя с други, и помагаме да откриете най-доброто от София, докато изграждате значими отношения за цял живот.
+        </p>
+      </div>
+
+      <!-- IMAGE -->
+      <div class="col-lg-6 text-center" data-aos="fade-left">
+        <img src="{% static 'images/23.jpeg' %}" alt="Общност" class="img-fluid rounded shadow">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="py-5 bg-light">
+  <div class="container text-center">
+    <h6 class="text-primary fw-bold" data-aos="fade-right">НАШИТЕ ЦЕННОСТИ</h6>
+    <h2 class="fw-bold mb-5" data-aos="fade-right">Какво прави Sofia Tribe специално?</h2>
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="fade-up">
+        <div class="card h-100 shadow-sm p-4">
+          <div class="icon mb-3 text-primary"><i class="fas fa-users fa-2x"></i></div>
+          <h4>Общност</h4>
+          <p class="text-muted">Приветливо място за всички, независимо откъде идват.</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+        <div class="card h-100 shadow-sm p-4">
+          <div class="icon mb-3 text-success"><i class="fas fa-handshake fa-2x"></i></div>
+          <h4>Връзка</h4>
+          <p class="text-muted">Създаваме истински приятелства, които остават след събитията.</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card h-100 shadow-sm p-4">
+          <div class="icon mb-3 text-warning"><i class="fas fa-smile-beam fa-2x"></i></div>
+          <h4>Забавление</h4>
+          <p class="text-muted">Животът е по-хубав с усмивки, радост и незабравими моменти.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY WE EXIST -->
+<section class="py-5 position-relative text-center text-dark">
+  <div class="blurred-bg position-absolute w-100 h-100" 
+       style="background: url('{% static "images/video.jpeg" %}') center/cover no-repeat; filter: blur(6px);"></div>
+  <div class="overlay position-absolute w-100 h-100" 
+       style="background: rgba(255,255,255,0.6); top:0; left:0;"></div>
+
+  <div class="container position-relative" style="z-index: 2;">
+    <h6 class="text-primary fw-bold" data-aos="fade-up">ЗАЩО СЪЩЕСТВУВАМЕ</h6>
+    <h2 class="fw-bold mb-4" data-aos="fade-up" data-aos-delay="100">Повече от събития</h2>
+    <p class="text-muted mb-5" style="max-width: 700px; margin: 0 auto;" data-aos="fade-up" data-aos-delay="200">
+      Sofia Tribe не е просто за срещи – това е място, където хората могат да се свързват, да растат и да се чувстват у дома в нов град. 
+      Фокусираме се върху изграждането на истински връзки, споделянето на култура и създаването на незабравими моменти.
+    </p>
+
+    <div class="row g-4 mt-4">
+      <div class="col-md-4" data-aos="fade-up">
+        <div class="p-4">
+          <div class="icon mb-3 text-success"><i class="fas fa-heart fa-2x"></i></div>
+          <h5 class="fw-bold">Приобщаващо</h5>
+          <p class="text-muted">Приветстваме всички – местни, чужденци, пътешественици.</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+        <div class="p-4">
+          <div class="icon mb-3 text-info"><i class="fas fa-globe-europe fa-2x"></i></div>
+          <h5 class="fw-bold">Културен обмен</h5>
+          <p class="text-muted">Място за споделяне на истории, езици и различни гледни точки.</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="p-4">
+          <div class="icon mb-3 text-warning"><i class="fas fa-seedling fa-2x"></i></div>
+          <h5 class="fw-bold">Лично израстване</h5>
+          <p class="text-muted">Срещнете нови хора, научете нови неща и растете заедно.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE DO -->
+<section class="py-5">
+  <div class="container">
+    <h6 class="text-primary fw-bold text-center" data-aos="fade-right">КАКВО ПРАВИМ</h6>
+    <h2 class="fw-bold text-center mb-5" data-aos="fade-right">Събираме хората заедно</h2>
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="fade-up">
+        <div class="card shadow-sm h-100">
+          <img src="{% static 'images/ppppaaast.jpeg' %}" class="card-img-top" alt="Events">
+          <div class="card-body">
+            <h5 class="card-title">Социални събития</h5>
+            <p class="card-text text-muted">От уютни кафе срещи до вълнуващи вечери – улесняваме социализирането.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+        <div class="card shadow-sm h-100">
+          <img src="{% static 'images/snow.jpeg' %}" class="card-img-top" alt="Tours">
+          <div class="card-body">
+            <h5 class="card-title">Откриване на града</h5>
+            <p class="card-text text-muted">Открийте скритите съкровища, историята и културата на София с нови приятели.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card shadow-sm h-100">
+          <img src="{% static 'images/upcomingfirst.jpeg' %}" class="card-img-top" alt="Adventures">
+          <div class="card-body">
+            <h5 class="card-title">Приключения на открито</h5>
+            <p class="card-text text-muted">Уикенд преходи, бягства сред природата и забавни пътувания извън града.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY JOIN -->
+<section class="py-5 text-white position-relative" style="background: url('{% static 'images/contact.jpeg' %}') center/cover no-repeat;">
+  <div class="overlay position-absolute w-100 h-100" style="background: rgba(0,0,0,0.65); top:0; left:0;"></div>
+  <div class="container position-relative z-2 text-center" data-aos="fade-in">
+    <h2 class="fw-bold mb-4">Искаш ли да се свържеш с нас?</h2>
+    <p class="lead mb-4" style="max-width: 700px; margin: 0 auto;">
+      Запознай се с невероятни хора, създай незабравими спомени и се почувствай като у дома в София. Ще се радваме да се срещнем!
+    </p>
+    <a href="/bg/svurjetesesnas/" class="btn btn-primary btn-lg">
+      <i class="fa-solid fa-heart me-2"></i> Просто ни пиши 
+    </a>
+  </div>
+</section>
+
+{% endblock icerik %}
