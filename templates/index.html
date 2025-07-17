@@ -5,23 +5,25 @@
 
 {% block content %}
 
-<section class="hero-section position-relative text-center text-white d-flex align-items-center justify-content-center" style="height: 100vh; overflow: hidden;">
+<section class="hero-section position-relative text-center text-white d-flex align-items-center justify-content-center" 
+         style="height: 100vh; background: url('{% static 'images/sf.png' %}') center/cover no-repeat;">
 
-  <!-- Background Video -->
-  <video class="hero-bg-video position-absolute w-100 h-100" autoplay muted loop playsinline style="object-fit: cover; filter: brightness(60%);">
-    <source src="{% static 'videos/sofiacatedral.mp4' %}" type="video/mp4">
-  </video>
+  <!-- Karartma Overlay -->
+  <div class="position-absolute w-100 h-100" style="background: rgba(0,0,0,0.55);"></div>
 
-  <!-- Overlay Content -->
+  <!-- İçerik -->
   <div class="hero-content position-relative z-2" data-aos="fade-up">
     <img src="{% static 'images/logo.png' %}" alt="Sofia Tribe Logo" class="mb-4" style="height: 100px;">
 
-    <h1 class="fw-bold mb-3" style="font-size: 2.5rem;">We are the community in Sofia<br>for activity & events</h1>
+    <h1 class="fw-bold mb-3" style="font-size: 2.5rem;">
+      We are the community in Sofia<br>for activity & events
+    </h1>
+
     <p class="lead mb-4" style="max-width: 600px; margin: 0 auto;">
       Connecting people through unforgettable experiences. Join us for exciting events, meaningful friendships, and new adventures!
     </p>
 
-    <!-- Buttons -->
+    <!-- Butonlar -->
     <div class="d-flex flex-column flex-sm-row justify-content-center gap-3 mt-4">
       <a href="/contact-us/" class="btn btn-primary btn-lg px-4">
         <i class="fa-solid fa-envelope me-2"></i> Contact Us

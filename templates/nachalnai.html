@@ -5,26 +5,29 @@
 
 {% block icerik %}
 
-<section class="hero-section position-relative text-center text-white d-flex align-items-center justify-content-center" style="height: 100vh; overflow: hidden;">
+<section class="hero-section position-relative text-center text-white d-flex align-items-center justify-content-center" 
+         style="height: 100vh; background: url('{% static 'images/sf.png' %}') center/cover no-repeat;">
 
-  <!-- Background Video -->
-  <video class="hero-bg-video position-absolute w-100 h-100" autoplay muted loop playsinline style="object-fit: cover; filter: brightness(60%);">
-    <source src="{% static 'videos/sofiacatedral.mp4' %}" type="video/mp4">
-  </video>
+  <!-- Karartma Overlay -->
+  <div class="position-absolute w-100 h-100" style="background: rgba(0,0,0,0.55);"></div>
 
-  <!-- Overlay Content -->
+  <!-- İçerik -->
   <div class="hero-content position-relative z-2" data-aos="fade-up">
     <img src="{% static 'images/logo.png' %}" alt="Sofia Tribe Logo" class="mb-4" style="height: 100px;">
 
-    <h1 class="fw-bold mb-3" style="font-size: 2.5rem;">Ние сме общността в София<br>за активности и събития</h1>
+    <h1 class="fw-bold mb-3" style="font-size: 2.5rem;">
+      Ние сме общността в София<br>за активности и събития
+    </h1>
+
     <p class="lead mb-4" style="max-width: 600px; margin: 0 auto;">
-      Свързваме хората чрез незабравими преживявания. Присъединете се към нас за вълнуващи събития, смислени приятелства и нови приключения!
+      Свързваме хората чрез незабравими преживявания. 
+      Присъедини се към нас за вълнуващи събития, истински приятелства и нови приключения!
     </p>
 
-    <!-- Buttons -->
+    <!-- Бутони -->
     <div class="d-flex flex-column flex-sm-row justify-content-center gap-3 mt-4">
-      <a href="/bg/svurjetesesnas/" class="btn btn-primary btn-lg px-4">
-        <i class="fa-solid fa-envelope me-2"></i> Свържете се с нас
+      <a href="/contact-us/" class="btn btn-primary btn-lg px-4">
+        <i class="fa-solid fa-envelope me-2"></i> Свържи се с нас
       </a>
       <a href="#community" class="btn btn-outline-light btn-lg px-4">
         <i class="fa-solid fa-arrow-down me-2"></i> Да започнем
@@ -33,6 +36,7 @@
   </div>
 
 </section>
+
 
 
 <section id="community" class="community-section">

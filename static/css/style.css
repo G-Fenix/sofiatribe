@@ -172,11 +172,7 @@ html, body {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.466); /* Ekstra koyuluk efekti */
-}
-
-.hero-bg-video {
-    z-index: 0;
+    background: rgba(0, 0, 0, 0.247); /* Ekstra koyuluk efekti */
 }
 
 .hero-content {
