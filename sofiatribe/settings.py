@@ -25,7 +25,10 @@ SECRET_KEY = 'django-insecure-a&mn-+!$-%!c((w-+q5f%1@%uw)_m8z!z-r)v&lbvzcrv=z4ui
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["sofiatribe.onrender.com", "localhost", "127.0.0.1"]
+ALLOWED_HOSTS = [
+    "www.sofiatribe.com", 
+    "sofiatribe.com"
+]
 
 
 # Application definition
