@@ -26,6 +26,7 @@ SECRET_KEY = 'django-insecure-a&mn-+!$-%!c((w-+q5f%1@%uw)_m8z!z-r)v&lbvzcrv=z4ui
 DEBUG = False
 
 ALLOWED_HOSTS = [
+    "sofiatribe.onrender.com",
     "www.sofiatribe.com", 
     "sofiatribe.com"
 ]
